@@ -1,0 +1,324 @@
+/* font-family: 'Supreme', sans-serif;
+font-family: 'Technor', sans-serif;
+font-family: 'Bespoke Stencil', sans-serif;
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Technor', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #9400D3;
+}
+
+body{
+    background-color: rgb(40, 40, 40);
+    font-family: 'Technor', sans-serif;
+}
+
+/* inizio nav bar */
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    height: 6vh;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.fake-nav{
+    width: 100%;
+    height: 6vh;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.title h1{
+    font-size: 6vh;
+    background: linear-gradient(270deg, rgb(7, 63, 0), #00FF00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.title img{
+    height: 100%;
+    height: 4vh;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    margin-right: 2vw;
+    }
+
+ul li {
+    list-style: none;
+    }
+
+ul li a {
+    text-decoration: none;
+    color: #00FF00; 
+    transition: 0.3s ease;
+    padding-left: 2vw;
+}
+
+ul:hover li a {
+    color: #9400D3;
+}
+
+
+ul:hover li a:not(:hover) {
+    color: rgb(40, 40, 40);
+    filter: blur (1px);
+}
+/* fine nav bar */
+
+/* inizio pagina presentazione */
+.booking{
+    width: 100%;
+    height: 87vh;
+}
+
+.booking .container {
+    display: grid; 
+    grid-template-columns: 0.7fr 1.3fr; 
+    grid-template-rows: 1fr;
+    padding: 2vw;
+
+}
+
+.booking .container h3{
+    line-height: 12vh;
+    font-size: 5vh;
+    color: rgb(150, 150, 150);
+    text-align: left;
+}
+
+.wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2vw;
+}
+/*     border: 2px solid white; */
+
+
+.button {
+    width: 200px;
+    height: 60px;
+    font-family: 'Technor', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+    background: #4FD1C5;
+    background: #9400D3;
+    border: none;
+    border-radius: 1000px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+
+button::before {
+    content: '';
+    border-radius: 1000px;
+    width: 210px;
+    height: 70px;
+    border: 2px solid rgb(0, 255, 0);
+    box-shadow: 0 0 60px rgb(0, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+    color: rgb(0, 255, 0);
+    transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+    opacity: 1;
+}
+
+button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+}
+
+
+hr{
+    width: 95%;
+    height: 1px;
+    border: 1px solid #00FF00;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow p{
+    color: #00FF00;
+    padding: 2vh;
+}
+/* fine pagina presentazione */
+
+/* inizio pagina di siegazione */
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    padding: 20px;
+    gap: 4vh 2vw;
+    place-items: center;
+}
+
+.container-p{
+    height: 100%;
+    width: 30vw;
+}
+
+.container img{
+    height: 30vh;
+    width: auto;
+}
+
+.container h2{
+    color: #9400D3;
+    font-size: 3vh;
+    padding: 0px 0px 10px 0px;
+}
+
+.container p{
+    line-height: 30px;
+    color: rgb(150, 150, 150);
+}
+
+
+.container h3 {
+	text-align: center;
+}
+/* fine pagina di spiegazione */
+
+/* inizio form di prenotazione */
+.form-position{
+height: 30vh;
+grid-template-columns: 1fr 1fr; 
+grid-template-rows: 1fr; 
+margin: 10vh 0vw 5vh 0vw;
+}
+
+.form {
+    height: 100%;
+    width: 60%;
+    font-family: 'Technor', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+    background: #4FD1C5;
+    background: #9400D3;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+
+form::before {
+    content: '';
+    border-radius: 10px;
+    width: calc(100% + 11px);
+    height: calc(100% + 10px);
+    border: 2px solid rgb(0, 255, 0);
+    box-shadow: 0 0 60px rgb(0, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.form:hover, .form:focus {
+    color: rgb(0, 255, 0);
+}
+
+form:hover::before, form:focus::before {
+    opacity: 1;
+}
+
+form:hover::after, form:focus::after {
+    animation: none;
+    display: none;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    margin-left: 30%;
+}
+
+form div input{
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    width: 50%;
+    height: 10%;
+    margin-top: 2%;
+    text-align: center;
+}
+/* fine form di prenotazione */
+
+/* inizio sezione autori */
+
+/* fine sezione autori */
+
+/* inizio footer */
+footer{
+    height: 30vh;
+    background-color: rgb(20, 20, 20);
+}
+
+/* fine footer */

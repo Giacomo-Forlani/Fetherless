@@ -1,0 +1,151 @@
+html{
+    display: flex;
+    align-items: center;
+
+}
+
+body{
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+
+/* .container-form{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border: 2px solid rgb(231, 11, 11);
+    height: 100%;
+    width: 100%;
+}
+
+.neon-border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(38, 227, 13) ;
+    height: 30%;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0, 255, 0);
+    position: absolute;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9400D3;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+label{
+    text-align: center;
+    font-family: 'Technor', sans-serif;
+    margin-bottom: 5%;
+    color: white;
+}
+
+input{
+    background-color: rgb(40, 40, 40);
+    color: rgb(255, 255, 255);
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+} */
+
+
+
+
+
+
+
+.form {
+    height: 100%;
+    width: 40%;
+    font-family: 'Technor', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: white;
+    background: #4FD1C5;
+    background: #9400D3;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+
+form::before {
+    content: '';
+    border-radius: 10px;
+    width: calc(100% + 11px);
+    height: calc(100% + 10px);
+    border: 2px solid rgb(0, 255, 0);
+    box-shadow: 0 0 60px rgb(0, 255, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.form:hover, .form:focus {
+    color: rgb(0, 255, 0);
+}
+
+form:hover::before, form:focus::before {
+    opacity: 1;
+}
+
+form:hover::after, form:focus::after {
+    animation: none;
+    display: none;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+form div label{
+
+}
+
+form div input{
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    width: 80%;
+    height: 10%;
+    margin-top: 2%;
+}
+
