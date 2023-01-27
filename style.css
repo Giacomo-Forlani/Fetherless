@@ -120,7 +120,6 @@ ul:hover li a:not(:hover) {
     font-size: 5vh;
     color: rgb(150, 150, 150);
     text-align: left;
-    border: 2px solid white;
 }
 
 .wrap {
@@ -332,7 +331,6 @@ footer{
         grid-template-columns: 1fr; 
         grid-template-rows: 1fr;
         padding: 2vw;
-        border: 2px solid white;
         height: 80%;
         width: 100%;
         justify-content: center;
