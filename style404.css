@@ -1,0 +1,139 @@
+/* font-family: 'Supreme', sans-serif;
+font-family: 'Technor', sans-serif;
+font-family: 'Bespoke Stencil', sans-serif;
+ */
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+ /* 404 error */
+
+  /* ATTIVO LA GRID GALLERY SOLO DA 800PX IN SU  */
+
+@media (min-width:800px){
+
+.gallery{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 2rem;
+}
+
+.gallery img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover; /* effetto cover come in background-size: cover; */
+    display: block;
+}
+
+.gallery__item--1{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+.gallery__item--2{
+    font-size: 2rem;
+    color: #00FF00;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+}
+/* fine 404 error */ 
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Technor', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 1vw;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(20, 20, 20);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #9400D3;
+}
+
+body{
+    background-color: rgb(40, 40, 40);
+    font-family: 'Technor', sans-serif;
+}
+
+/* inizio nav bar */
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    height: 6vh;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.fake-nav{
+    width: 100%;
+    height: 6vh;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.title h1{
+    font-size: 6vh;
+    background: linear-gradient(270deg, rgb(7, 63, 0), #00FF00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.title img{
+    height: 100%;
+    height: 4vh;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    margin-right: 2vw;
+    }
+
+ul li {
+    list-style: none;
+    }
+
+ul li a {
+    text-decoration: none;
+    color: #00FF00; 
+    transition: 0.3s ease;
+    padding-left: 2vw;
+}
+
+ul:hover li a {
+    color: #9400D3;
+}
+
+
+ul:hover li a:not(:hover) {
+    color: rgb(40, 40, 40);
+    filter: blur (1px);
+}
+/* fine nav bar */
