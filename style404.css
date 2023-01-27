@@ -12,6 +12,10 @@ font-family: 'Bespoke Stencil', sans-serif;
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
  /* 404 error */
 
   /* ATTIVO LA GRID GALLERY SOLO DA 800PX IN SU  */
