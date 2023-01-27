@@ -108,17 +108,19 @@ ul:hover li a:not(:hover) {
 
 .booking .container {
     display: grid; 
-    grid-template-columns: 0.7fr 1.3fr; 
+    grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr;
-    padding: 2vw;
-
+    border: 2px solid white;
+    width: 100%;
+    height: fit-content;
 }
 
 .booking .container h3{
-    line-height: 12vh;
+    line-height: 180%;
     font-size: 5vh;
     color: rgb(150, 150, 150);
     text-align: left;
+    border: 2px solid white;
 }
 
 .wrap {
@@ -203,7 +205,7 @@ hr{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
-    padding: 20px;
+    padding: 2vw;
     gap: 4vh 2vw;
     place-items: center;
 }
@@ -322,3 +324,30 @@ footer{
 }
 
 /* fine footer */
+
+@media (max-width:900px){
+    
+    .booking .container {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr;
+        padding: 2vw;
+        border: 2px solid white;
+        height: 80%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .booking .container h3{
+/*         line-height: ; */
+        font-size: 5vh;
+        color: rgb(150, 150, 150);
+        text-align: left;
+        border: 2px solid white;
+        height: 100%;
+    }
+
+    .container img{
+        display: none;
+    }
+}

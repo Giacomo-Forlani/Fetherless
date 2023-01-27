@@ -16,14 +16,13 @@ font-family: 'Bespoke Stencil', sans-serif;
 
   /* ATTIVO LA GRID GALLERY SOLO DA 800PX IN SU  */
 
-@media (min-width:800px){
-
 .gallery{
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(9, 5vw);
     grid-gap: 2rem;
+    height: 90vh;
 }
 
 .gallery img{
@@ -47,7 +46,7 @@ font-family: 'Bespoke Stencil', sans-serif;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-}
+
 /* fine 404 error */ 
 
 html{
